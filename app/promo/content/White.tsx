@@ -8,7 +8,7 @@ import Progress from "@/components/progress";
 import Button from "@/components/button";
 import { CheckCheck, Loader2 } from "lucide-react";
 
-const CHECKOUT_LINK = "https://pay.hotmart.com/U104758447T?bid=1772740567785"; // ou use promoLink do useLayer()
+const CHECKOUT_LINK = "https://pay.hotmart.com/U104758447T?bid=1772740567785";
 
 export default function White() {
   const { promoLink } = useLayer();
@@ -21,39 +21,40 @@ export default function White() {
   };
 
   const benefits = [
-    "Permanent Entry: All current modules and every future update at no extra cost.",
-    "Priority Support: Ongoing access to our community and mentorship updates.",
-    "Inflation Proof: Lock in today's price and protect yourself from future subscription hikes."
+    "Learn how to build profitable faceless YouTube channels from scratch.",
+    "Discover viral video formats that generate massive views.",
+    "Use simple tools to create content without recording yourself.",
+    "Find profitable niches with high growth potential.",
+    "Scale channels and turn views into real online income."
   ];
 
   return (
     <div className="min-h-svh w-full bg-black text-white relative overflow-x-hidden overflow-y-auto">
-      {/* Animated background grid */}
+
+      {/* Animated background */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div
           className="absolute inset-0"
           style={{
             backgroundImage: `linear-gradient(rgba(255,0,0,0.1) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(255,0,0,0.1) 1px, transparent 1px)`,
+            linear-gradient(90deg, rgba(255,0,0,0.1) 1px, transparent 1px)`,
             backgroundSize: "50px 50px",
           }}
         />
       </div>
 
-      {/* Red accent line (top) */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent pointer-events-none" />
+      {/* Top accent line */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent" />
 
-      {/* Warning Banner */}
+      {/* Warning banner */}
       <div className="relative z-10 w-full bg-red-600 text-white">
-        <div className="mx-auto px-4 sm:px-6 py-4 font-medium">
-          <div className="text-sm font-semibold text-center">
-            Please do not close or refresh this page, we have a limited time offer!
-          </div>
+        <div className="mx-auto px-4 sm:px-6 py-4 font-medium text-center text-sm">
+          Wait! Your order is not complete yet. This exclusive offer is available only on this page.
         </div>
       </div>
 
-      {/* Checkout Button - Top */}
-      <div className="relative z-10 w-full max-w-xl px-5 pt-6">
+      {/* CTA Top */}
+      <div className="relative z-10 w-full max-w-xl px-5 pt-6 mx-auto">
         <a href={checkoutLink} className="w-full block">
           <Button
             onClick={handleClick}
@@ -65,24 +66,28 @@ export default function White() {
             ) : (
               <CheckCheck className="size-5" />
             )}
-            <span>I WANT TO ENJOY IT!</span>
+            <span>YES! UNLOCK PROFITABLE FACELESS YOUTUBE</span>
           </Button>
         </a>
       </div>
 
-      {/* Main Content */}
+      {/* Main content */}
       <div className="relative z-10 flex flex-col items-center w-full max-w-4xl gap-8 px-5 py-8 mx-auto">
-        {/* Progress Section */}
+
+        {/* Progress */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center gap-3 text-center w-full"
         >
-          <span className="text-sm italic text-gray-400">We are processing your fee payment…</span>
+          <span className="text-sm italic text-gray-400">
+            Finalizing your order...
+          </span>
+
           <Progress progress={67} />
         </motion.div>
 
-        {/* Upsell Section */}
+        {/* Offer box */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -90,60 +95,73 @@ export default function White() {
           className="w-full"
         >
           <div className="relative rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/80 to-black p-6 md:p-8 backdrop-blur-sm">
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-red-600/5 to-transparent" />
+
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-red-600/10 to-transparent" />
 
             <div className="relative z-10 space-y-6">
+
               {/* Header */}
               <div className="text-center space-y-4">
+
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-600/50 bg-red-600/10 backdrop-blur-sm"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-600/50 bg-red-600/10"
                 >
                   <Zap className="w-4 h-4 text-red-500" />
-                  <span className="text-sm font-medium text-red-400">EXCLUSIVE ONE-TIME OFFER</span>
+                  <span className="text-sm font-medium text-red-400">
+                    LIMITED TIME OFFER
+                  </span>
                 </motion.div>
 
                 <h2 className="text-3xl md:text-4xl font-black">
                   <span className="bg-gradient-to-r from-white via-red-500 to-white bg-clip-text text-transparent">
-                    Lifetime Access
+                    Profitable Faceless YouTube
                   </span>
                 </h2>
 
                 <p className="text-xl md:text-2xl text-gray-300 font-light">
-                  Stop worrying about monthly bills forever.
+                  Discover how creators are building profitable YouTube channels without showing their face.
                 </p>
               </div>
 
-              {/* Main Offer Text */}
+              {/* Offer text */}
               <div className="space-y-4 text-gray-300 leading-relaxed">
+
                 <p className="text-lg">
-                  Upgrade to <span className="text-red-500 font-semibold">Faceless Channels - Lifetime Access</span> right now and eliminate all recurring fees. For a single, one-time investment, you unlock:
+                  Before you continue, you have the opportunity to access the system behind profitable faceless YouTube channels.
                 </p>
 
-                {/* Benefits List */}
+                <p className="text-lg">
+                  Inside <span className="text-red-500 font-semibold">Profitable Faceless YouTube</span>, you will discover how creators build channels that generate views, subscribers and automated online income.
+                </p>
+
+                {/* Benefits */}
                 <div className="space-y-3">
+
                   {benefits.map((benefit, index) => (
                     <motion.div
                       key={index}
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.4 + index * 0.1 }}
-                      className="flex items-start gap-3 p-4 rounded-lg border border-gray-800 bg-gray-900/30 hover:border-red-600/50 transition-all duration-300"
+                      className="flex items-start gap-3 p-4 rounded-lg border border-gray-800 bg-gray-900/30 hover:border-red-600/50 transition-all"
                     >
                       <CheckCircle2 className="w-5 h-5 text-red-500 flex-shrink-0 mt-0.5" />
-                      <p className="text-gray-300">{benefit}</p>
+                      <p>{benefit}</p>
                     </motion.div>
                   ))}
+
                 </div>
 
-                <p className="text-lg font-medium text-white pt-2">
-                  Secure your spot for life and focus entirely on your growth.
+                <p className="text-lg font-medium text-white pt-2 text-center">
+                  Start building your faceless YouTube system today.
                 </p>
+
               </div>
 
-              {/* Trust Indicators */}
+              {/* Trust badges */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -152,16 +170,35 @@ export default function White() {
               >
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <Shield className="w-4 h-4 text-red-500" />
-                  <span>Secure Payment</span>
+                  Secure Payment
                 </div>
+
                 <div className="flex items-center gap-2 text-sm text-gray-400">
                   <TrendingUp className="w-4 h-4 text-red-500" />
-                  <span>One-Time Investment</span>
+                  Proven Strategy
                 </div>
               </motion.div>
+
             </div>
           </div>
         </motion.div>
+
+        {/* CTA Bottom */}
+        <a href={checkoutLink} className="w-full max-w-xl block">
+          <Button
+            onClick={handleClick}
+            disabled={active}
+            className="w-full pulse p-6 text-lg bg-gradient-to-b from-green-500 to-green-600 hover:from-green-400 hover:to-green-500"
+          >
+            {active ? (
+              <Loader2 className="size-5 animate-spin" />
+            ) : (
+              <CheckCheck className="size-5" />
+            )}
+            <span>YES! GET INSTANT ACCESS</span>
+          </Button>
+        </a>
+
       </div>
     </div>
   );

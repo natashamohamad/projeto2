@@ -1,168 +1,257 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Rocket, Cpu, TrendingUp, Zap, BrainCircuit } from "lucide-react";
+import {
+Rocket,
+Cpu,
+TrendingUp,
+Zap,
+BrainCircuit,
+Sparkles,
+ShieldCheck,
+Target
+} from "lucide-react";
 
 const CHECKOUT_URL =
-  "https://pay.hotmart.com/U104758447T?bid=1772740567785";
+"https://pay.hotmart.com/U104758447T?bid=1772740567785";
 
 export default function AccessDenied() {
-  const features = [
-    {
-      icon: Rocket,
-      title: "Launch Faceless Channels",
-      description:
-        "Build automated YouTube channels without recording or showing your face.",
-    },
-    {
-      icon: Cpu,
-      title: "AI Content Systems",
-      description:
-        "Use artificial intelligence to generate scripts, ideas and viral content.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Algorithm Domination",
-      description:
-        "Understand how the YouTube algorithm pushes videos to millions of viewers.",
-    },
-    {
-      icon: BrainCircuit,
-      title: "Automated Growth",
-      description:
-        "Create systems that keep your channel growing every day.",
-    },
-    {
-      icon: Zap,
-      title: "Viral Short Strategy",
-      description:
-        "Leverage Shorts to grow faster than traditional channels.",
-    },
-  ];
 
-  return (
-    <div className="min-h-screen w-full bg-[#050510] text-white relative overflow-hidden">
+const features = [
+{
+icon: Rocket,
+title: "Launch Faceless Channels",
+description:
+"Build automated YouTube channels without recording or showing your face."
+},
+{
+icon: Cpu,
+title: "AI Content Systems",
+description:
+"Generate scripts, ideas and content using artificial intelligence."
+},
+{
+icon: TrendingUp,
+title: "Algorithm Domination",
+description:
+"Understand how the YouTube algorithm pushes videos to millions."
+},
+{
+icon: BrainCircuit,
+title: "Automated Growth",
+description:
+"Create systems that grow your channel every day."
+},
+{
+icon: Zap,
+title: "Viral Shorts Strategy",
+description:
+"Use YouTube Shorts to grow faster than traditional channels."
+},
+{
+icon: ShieldCheck,
+title: "Safe Monetization",
+description:
+"Learn strategies that keep channels safe and monetized."
+}
+];
 
-      {/* Cyberpunk grid background */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `
-            linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(255,0,255,0.08) 1px, transparent 1px)
-            `,
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
+const learn = [
+"How to create faceless YouTube channels",
+"How to generate unlimited video ideas with AI",
+"How to script videos using ChatGPT",
+"How to create viral YouTube Shorts",
+"How to grow channels without showing your face",
+"How to build multiple automated channels",
+"How to find profitable niches",
+"How to scale channels with automation"
+];
 
-      {/* glow lights */}
-      <div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-cyan-500 blur-[200px] opacity-20" />
-      <div className="absolute bottom-[-200px] right-[-200px] w-[500px] h-[500px] bg-purple-600 blur-[200px] opacity-20" />
+return (
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-24">
+<div className="min-h-[100vh] w-full bg-[#050510] text-white relative overflow-x-hidden overflow-y-auto">
 
-        {/* HERO */}
+{/* background grid */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center space-y-10"
-        >
+<div className="absolute inset-0 opacity-20 pointer-events-none">
 
-          <div className="inline-block px-6 py-2 rounded-full border border-cyan-400/40 bg-cyan-400/10 text-cyan-300 text-sm tracking-widest">
-            AI YOUTUBE SYSTEM
-          </div>
+<div
+className="absolute inset-0"
+style={{
+backgroundImage:
+`linear-gradient(rgba(0,255,255,0.07) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,0,255,0.07) 1px, transparent 1px)`,
+backgroundSize: "60px 60px"
+}}
+/>
 
-          <h1 className="text-5xl md:text-7xl font-black leading-tight">
+</div>
 
-            <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-              PROFITABLE
-            </span>
+{/* glow lights */}
 
-            <br />
+<div className="absolute top-[-200px] left-[-200px] w-[500px] h-[500px] bg-cyan-500 blur-[200px] opacity-20"/>
+<div className="absolute bottom-[-200px] right-[-200px] w-[500px] h-[500px] bg-purple-600 blur-[200px] opacity-20"/>
 
-            FACELESS YOUTUBE
+<main className="relative z-10 max-w-6xl mx-auto px-6 py-24">
 
-          </h1>
+{/* HERO */}
 
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+<section className="text-center space-y-8">
 
-            Build automated YouTube channels powered by artificial intelligence
-            and grow audiences without recording videos or showing your face.
+<div className="inline-block px-6 py-2 rounded-full border border-cyan-400/40 bg-cyan-400/10 text-cyan-300 text-sm tracking-widest">
+AI YOUTUBE SYSTEM
+</div>
 
-          </p>
+<h1 className="text-5xl md:text-7xl font-black">
 
-          <button
-            onClick={() => window.open(CHECKOUT_URL, "_blank")}
-            className="mt-6 px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold text-lg rounded-xl hover:scale-105 transition shadow-lg shadow-cyan-500/30"
-          >
-            START THE SYSTEM
-          </button>
+<span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
+PROFITABLE
+</span>
 
-        </motion.div>
+<br/>
 
-        {/* FEATURES */}
+FACELESS YOUTUBE
 
-        <section className="mt-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+</h1>
 
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
+<p className="text-xl text-gray-300 max-w-2xl mx-auto">
 
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="p-8 rounded-2xl border border-purple-500/20 bg-[#0a0a1a] backdrop-blur hover:border-cyan-400/40 transition"
-              >
+Build automated YouTube channels powered by artificial intelligence and grow audiences without recording videos or showing your face.
 
-                <Icon className="w-8 h-8 text-cyan-400 mb-4" />
+</p>
 
-                <h3 className="text-xl font-bold mb-2">
-                  {feature.title}
-                </h3>
+<button
+onClick={() => window.open(CHECKOUT_URL, "_blank")}
+className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-600 text-white font-bold text-lg rounded-xl hover:scale-105 transition shadow-lg shadow-cyan-500/30"
+>
 
-                <p className="text-gray-400">
-                  {feature.description}
-                </p>
+START THE SYSTEM
 
-              </motion.div>
-            );
-          })}
+</button>
 
-        </section>
+</section>
 
-        {/* CTA */}
+{/* BENEFITS */}
 
-        <section className="mt-32 text-center">
+<section className="mt-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-          <h2 className="text-4xl md:text-6xl font-black">
+{features.map((feature, index) => {
 
-            Build Your
-            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              {" "}AI YouTube Empire
-            </span>
+const Icon = feature.icon;
 
-          </h2>
+return (
 
-          <p className="text-gray-400 mt-6 text-lg">
-            Start building faceless channels that generate views and revenue.
-          </p>
+<div
+key={index}
+className="p-8 rounded-2xl border border-purple-500/20 bg-[#0a0a1a] hover:border-cyan-400/40 transition"
+>
 
-          <button
-            onClick={() => window.open(CHECKOUT_URL, "_blank")}
-            className="mt-10 px-12 py-6 bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-bold text-xl rounded-xl hover:scale-105 transition shadow-2xl shadow-purple-500/30"
-          >
-            ACCESS NOW
-          </button>
+<Icon className="w-8 h-8 text-cyan-400 mb-4"/>
 
-        </section>
+<h3 className="text-xl font-bold mb-2">
+{feature.title}
+</h3>
 
-      </main>
+<p className="text-gray-400">
+{feature.description}
+</p>
 
-    </div>
-  );
+</div>
+
+);
+
+})}
+
+</section>
+
+{/* WHAT YOU LEARN */}
+
+<section className="mt-32 text-center">
+
+<h2 className="text-4xl md:text-5xl font-bold mb-10">
+
+What You Will Learn
+
+</h2>
+
+<div className="grid md:grid-cols-2 gap-6 text-left max-w-4xl mx-auto">
+
+{learn.map((item,index)=>(
+<div key={index} className="flex gap-3 items-start">
+
+<Sparkles className="text-cyan-400 mt-1"/>
+
+<p className="text-gray-300">
+
+{item}
+
+</p>
+
+</div>
+))}
+
+</div>
+
+</section>
+
+{/* WHY IT WORKS */}
+
+<section className="mt-32 text-center max-w-3xl mx-auto">
+
+<h2 className="text-4xl md:text-5xl font-bold mb-6">
+
+Why Faceless YouTube Works
+
+</h2>
+
+<p className="text-gray-400 text-lg">
+
+The YouTube algorithm rewards consistency and engaging content.
+By combining automation tools, artificial intelligence and proven
+growth strategies, you can build scalable channels that attract
+thousands or even millions of views.
+
+</p>
+
+</section>
+
+{/* FINAL CTA */}
+
+<section className="mt-32 text-center">
+
+<h2 className="text-4xl md:text-6xl font-black">
+
+Build Your
+
+<span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+
+{" "}AI YouTube Empire
+
+</span>
+
+</h2>
+
+<p className="text-gray-400 mt-6 text-lg">
+
+Start creating faceless YouTube channels today.
+
+</p>
+
+<button
+onClick={() => window.open(CHECKOUT_URL, "_blank")}
+className="mt-10 px-12 py-6 bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-bold text-xl rounded-xl hover:scale-105 transition shadow-2xl shadow-purple-500/30"
+>
+
+ACCESS NOW
+
+</button>
+
+</section>
+
+</main>
+
+</div>
+
+);
+
 }

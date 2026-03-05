@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import {
 Rocket,
 Cpu,
@@ -8,8 +7,7 @@ TrendingUp,
 Zap,
 BrainCircuit,
 Sparkles,
-ShieldCheck,
-Target
+ShieldCheck
 } from "lucide-react";
 
 const CHECKOUT_URL =
@@ -131,7 +129,7 @@ START THE SYSTEM
 
 </section>
 
-{/* BENEFITS */}
+{/* FEATURES */}
 
 <section className="mt-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
@@ -182,9 +180,7 @@ What You Will Learn
 <Sparkles className="text-cyan-400 mt-1"/>
 
 <p className="text-gray-300">
-
 {item}
-
 </p>
 
 </div>
@@ -206,10 +202,9 @@ Why Faceless YouTube Works
 
 <p className="text-gray-400 text-lg">
 
-The YouTube algorithm rewards consistency and engaging content.
-By combining automation tools, artificial intelligence and proven
-growth strategies, you can build scalable channels that attract
-thousands or even millions of views.
+The YouTube algorithm rewards consistent content and audience engagement.
+By combining automation tools and artificial intelligence, creators can
+build scalable channels that reach thousands or even millions of viewers.
 
 </p>
 

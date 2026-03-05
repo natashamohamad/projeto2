@@ -7,69 +7,76 @@ import {
   TrendingUp,
   Target,
   Rocket,
-  Sparkles,
   Shield,
+  Sparkles,
 } from "lucide-react";
-import Link from "next/link";
 import ConfettiEffect from "@/components/confetti";
 
-const CHECKOUT_URL = "https://pay.hotmart.com/U104758447T?bid=1772740567785";
+const CHECKOUT_URL =
+  "https://pay.hotmart.com/U104758447T?bid=1772740567785";
 
-export default function ProfitableFacelessYoutube() {
+export default function AccessDenied() {
   const features = [
     {
-      icon: Rocket,
-      title: "Launch Faceless YouTube Channels",
-      description:
-        "Build powerful YouTube channels without showing your face.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Scale Channels for Profit",
-      description:
-        "Turn views into revenue using automated monetization strategies.",
-    },
-    {
       icon: Zap,
-      title: "Automate Your Workflow",
+      title: "Master the Faceless YouTube Automation",
       description:
-        "Use AI tools to produce high-quality content at scale.",
+        "Maximize your account visibility and reach millions of viewers.",
     },
     {
       icon: Target,
-      title: "Find Viral Niches",
+      title: "Optimize Your YouTube Profile",
       description:
-        "Discover profitable niches with massive growth potential.",
+        "Convert viewers into loyal followers with proven strategies.",
+    },
+    {
+      icon: Rocket,
+      title: "Unlimited Content Creation",
+      description:
+        "Use Canva to create unlimited Shorts and videos for YouTube.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Stay Ahead of Trends",
+      description:
+        "Discover trending sounds and concepts that go viral on YouTube.",
     },
     {
       icon: Sparkles,
-      title: "AI Content Creation",
+      title: "Viral Content Strategy",
       description:
-        "Generate scripts, visuals and videos using advanced AI tools.",
+        "Create compelling videos that earn thousands of views per video.",
     },
     {
       icon: Shield,
-      title: "Avoid Channel Risks",
+      title: "Avoid Common Pitfalls",
       description:
-        "Learn safe strategies that protect your channels from penalties.",
+        "Learn how to avoid penalties and ensure steady growth.",
     },
   ];
 
   const benefits = [
-    "Create automated YouTube channels without appearing on camera",
-    "Build multiple monetized channels in scalable niches",
-    "Use AI tools to generate scripts and video ideas instantly",
-    "Automate video production and publishing workflows",
-    "Find viral niches with massive view potential",
-    "Create viral Shorts and long-form videos",
-    "Grow channels consistently with algorithm-friendly strategies",
-    "Monetize with ads, affiliates and digital products",
-    "Build a scalable YouTube content business",
-    "Avoid common mistakes that kill new channels",
+    "Master the Faceless YouTube Automation and maximize your account visibility",
+    "Optimize your YouTube profile to convert viewers into loyal followers",
+    "How to use Canva to create unlimited Shorts and videos",
+    "Stay up to date with the latest Faceless YouTube trends",
+    "Discover how to find and leverage trending sounds and concepts",
+    "Create compelling videos that earn thousands of views",
+    "Develop a winning content strategy",
+    "Create branding elements including profile photos and banners",
+    "Use ChatGPT to enhance your YouTube video content",
+    "Avoid common mistakes that stop channel growth",
+    "Learn growth hacks to land on the YouTube Home feed",
+    "Discover insider YouTube marketing strategies",
+    "Stay ahead of competitors using advanced features",
+    "Optimize your videos with YouTube SEO",
+    "Stand out in crowded niches with modern strategies",
+    "Master YouTube Shorts growth tactics",
+    "Learn how to use ChatGPT for content creation",
   ];
 
   return (
-    <div className="w-full min-h-screen bg-black text-white relative overflow-hidden">
+    <div className="w-full h-svh bg-black text-white relative overflow-x-hidden overflow-y-auto">
 
       {/* Background grid */}
       <div className="absolute inset-0 opacity-20 pointer-events-none">
@@ -83,27 +90,27 @@ export default function ProfitableFacelessYoutube() {
         />
       </div>
 
-      {/* Top accent line */}
+      {/* Top red line */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent" />
 
-      <main className="relative z-10">
+      <main className="relative z-10 w-full">
 
         {/* HERO */}
-        <section className="max-w-6xl mx-auto px-6 py-24 text-center space-y-8">
+        <section className="max-w-7xl mx-auto px-6 py-24 text-center space-y-8">
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
           >
 
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-600/40 bg-red-600/10 mb-6">
-              <span className="h-2 w-2 bg-red-500 rounded-full animate-pulse" />
-              <span className="text-sm text-red-400 font-medium">
-                AI YOUTUBE SYSTEM
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-600/50 bg-red-600/10">
+              <span className="h-2 w-2 rounded-full bg-red-600 animate-pulse" />
+              <span className="text-sm font-medium text-red-400">
+                PROFITABLE FACELESS YOUTUBE
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl font-black leading-tight">
+            <h1 className="text-5xl md:text-7xl font-black tracking-tight">
 
               <span className="bg-gradient-to-r from-white via-red-500 to-white bg-clip-text text-transparent">
                 PROFITABLE
@@ -119,137 +126,123 @@ export default function ProfitableFacelessYoutube() {
 
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
 
-              Build profitable YouTube channels using
+              Build powerful YouTube channels using
               <span className="text-red-500 font-semibold">
                 {" "}AI automation
-              </span>{" "}
-              without showing your face.
+              </span>
+              {" "}without showing your face.
 
             </p>
 
-            <div className="pt-8">
-
-              <button
-                onClick={() => window.open(CHECKOUT_URL, "_blank")}
-                className="group inline-flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-lg rounded-lg transition-all hover:scale-105 shadow-lg shadow-red-600/40"
-              >
-
-                START BUILDING NOW
-
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-
-              </button>
-
-            </div>
+            <button
+              onClick={() => window.open(CHECKOUT_URL, "_blank")}
+              className="mt-6 inline-flex items-center gap-3 px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold text-lg rounded-lg transition-all hover:scale-105 shadow-lg shadow-red-600/50"
+            >
+              START YOUR JOURNEY
+              <ArrowRight className="w-5 h-5" />
+            </button>
 
           </motion.div>
 
         </section>
 
         {/* FEATURES */}
-        <section className="max-w-7xl mx-auto px-6 py-20 border-t border-red-600/20">
+        <section className="py-20 border-t border-red-600/20">
 
-          <div className="text-center mb-16">
+          <div className="max-w-7xl mx-auto px-6">
 
-            <h2 className="text-4xl font-bold">
-
-              What You'll <span className="text-red-500">Learn</span>
-
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+              What You Will <span className="text-red-600">Master</span>
             </h2>
 
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {features.map((feature, index) => {
 
-            {features.map((feature, index) => {
+                const Icon = feature.icon;
 
-              const Icon = feature.icon;
+                return (
 
-              return (
+                  <div
+                    key={index}
+                    className="p-6 rounded-xl border border-gray-800 bg-gray-900/50 hover:border-red-600/50 transition-all"
+                  >
 
-                <div
-                  key={index}
-                  className="p-6 rounded-xl border border-gray-800 bg-gray-900/40 hover:border-red-600/40 transition"
-                >
+                    <Icon className="w-6 h-6 text-red-500 mb-4" />
 
-                  <Icon className="w-6 h-6 text-red-500 mb-4" />
+                    <h3 className="text-xl font-bold mb-2">
+                      {feature.title}
+                    </h3>
 
-                  <h3 className="text-xl font-bold mb-2">
-                    {feature.title}
-                  </h3>
+                    <p className="text-gray-400">
+                      {feature.description}
+                    </p>
 
-                  <p className="text-gray-400">
-                    {feature.description}
-                  </p>
+                  </div>
 
-                </div>
+                );
 
-              );
-            })}
+              })}
+
+            </div>
 
           </div>
 
         </section>
 
         {/* BENEFITS */}
-        <section className="max-w-6xl mx-auto px-6 py-20 border-t border-red-600/20">
+        <section className="py-20 border-t border-red-600/20">
 
-          <div className="text-center mb-16">
+          <div className="max-w-6xl mx-auto px-6">
 
-            <h2 className="text-4xl font-bold">
-
-              What You Get Inside
-
+            <h2 className="text-4xl font-bold text-center mb-16">
+              Everything Included
             </h2>
 
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-          <div className="grid md:grid-cols-2 gap-4">
+              {benefits.map((benefit, index) => (
 
-            {benefits.map((benefit, i) => (
+                <div
+                  key={index}
+                  className="flex items-start gap-4 p-4 rounded-lg border border-gray-800 bg-gray-900/30"
+                >
 
-              <div
-                key={i}
-                className="flex gap-4 items-start p-4 border border-gray-800 rounded-lg bg-gray-900/30"
-              >
+                  <div className="w-5 h-5 rounded-full bg-red-600 mt-1" />
 
-                <div className="w-5 h-5 rounded-full bg-red-600 mt-1" />
+                  <p className="text-gray-300">
+                    {benefit}
+                  </p>
 
-                <p className="text-gray-300">
-                  {benefit}
-                </p>
+                </div>
 
-              </div>
+              ))}
 
-            ))}
+            </div>
 
           </div>
 
         </section>
 
         {/* FINAL CTA */}
-        <section className="text-center py-24 border-t border-red-600/20">
+        <section className="py-20 text-center border-t border-red-600/20">
 
-          <h2 className="text-5xl font-black mb-6">
+          <h2 className="text-4xl md:text-6xl font-black mb-6">
 
-            Build Your
-            <span className="text-red-500"> YouTube Empire</span>
+            Ready to Build Your
+            <span className="text-red-600"> YouTube Empire</span>?
 
           </h2>
 
-          <p className="text-gray-400 mb-10 text-lg">
-
-            Start creating profitable faceless YouTube channels today.
-
+          <p className="text-xl text-gray-400 mb-8">
+            Start creating profitable faceless channels today.
           </p>
 
           <button
             onClick={() => window.open(CHECKOUT_URL, "_blank")}
-            className="px-10 py-5 bg-gradient-to-r from-red-600 to-red-700 hover:scale-105 transition text-white font-bold text-xl rounded-lg shadow-2xl shadow-red-600/40"
+            className="px-10 py-5 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold text-xl rounded-lg hover:scale-105 transition shadow-2xl shadow-red-600/50"
           >
-
-            ACCESS THE SYSTEM
-
+            GET STARTED NOW
           </button>
 
         </section>
@@ -257,12 +250,6 @@ export default function ProfitableFacelessYoutube() {
         <ConfettiEffect />
 
       </main>
-
-      <footer className="text-center py-10 border-t border-red-600/20 text-gray-500 text-sm">
-
-        © 2025 Profitable Faceless YouTube
-
-      </footer>
 
     </div>
   );

@@ -8,7 +8,7 @@ import Progress from "@/components/progress";
 import Button from "@/components/button";
 import { CheckCheck, Loader2 } from "lucide-react";
 
-const CHECKOUT_LINK = "https://pay.hotmart.com/U104758447T?bid=1772740567785";
+const CHECKOUT_LINK = "https://pay.hotmart.com/U104758447T?off=6ijz3f3g";
 
 export default function White() {
 

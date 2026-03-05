@@ -8,7 +8,7 @@ import Progress from "@/components/progress";
 import Button from "@/components/button";
 import { CheckCheck, Loader2 } from "lucide-react";
 
-const CHECKOUT_LINK = "https://teu_link_de_checkout_aqui"; // ou use promoLink do useLayer()
+const CHECKOUT_LINK = "https://pay.hotmart.com/U104758447T?bid=1772740567785"; // ou use promoLink do useLayer()
 
 export default function White() {
   const { promoLink } = useLayer();

@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 import ConfettiEffect from "@/components/confetti";
 
-const CHECKOUT_URL = "https://teu_link_de_checkout_aqui";
+const CHECKOUT_URL = "https://pay.hotmart.com/U104758447T?bid=1772740567785";
 
 export default function AccessDenied() {
   const features = [

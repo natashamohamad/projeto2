@@ -74,8 +74,8 @@ export function LayerProvider({
   const [withdrawModal, setWithdrawModal] = useState<boolean>(false);
 
   // SET LINKS
-  const frontLink = 'https://pay.hotmart.com/';
-  const promoLink = 'https://pay.hotmart.com/';
+  const frontLink = 'https://pay.hotmart.com/U104758447T?bid=1772740567785';
+  const promoLink = 'https://pay.hotmart.com/U104758447T?bid=1772740567785';
 
   // SET PAGE CONTENT
   const pageContent = routes[content][page];

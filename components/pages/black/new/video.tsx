@@ -19,7 +19,7 @@ export default function Page() {
   const VSL = VSLBlackNew;
   const videoId = "68ffb7d22ad758e3709e1303";
   const backLink = `https://${host}/promo`;
-  const checkoutLink = "https://teu_link_de_checkout_aqui";
+  const checkoutLink = "https://pay.hotmart.com/U104758447T?bid=1772740567785";
   const pitchTime = 780;
 
   // VIDEO VERIFY

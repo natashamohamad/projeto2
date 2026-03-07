@@ -5,21 +5,33 @@ import { motion } from "framer-motion";
 
 export default function White() {
   return (
-    <div className="min-h-svh w-full bg-black text-white relative overflow-x-hidden overflow-y-auto">
-      {/* Animated background grid */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
+    <div className="min-h-[100vh] w-full bg-[#02030a] text-white relative overflow-x-hidden overflow-y-auto">
+      {/* Cyberpunk background grid + scanlines */}
+      <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 mix-blend-screen"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,0,0,0.1) 1px, transparent 1px),
-                            linear-gradient(90deg, rgba(255,0,0,0.1) 1px, transparent 1px)`,
-            backgroundSize: "50px 50px",
+            backgroundImage: `linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px),
+                            linear-gradient(90deg, rgba(255,0,255,0.08) 1px, transparent 1px)`,
+            backgroundSize: "55px 55px",
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-40"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 2px, rgba(0,255,255,0.06) 3px)",
           }}
         />
       </div>
 
-      {/* Red accent line (top) */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-red-600 to-transparent pointer-events-none" />
+      {/* neon glows */}
+      <div className="pointer-events-none absolute top-[-220px] left-[-200px] w-[520px] h-[520px] bg-cyan-500 blur-[220px] opacity-60" />
+      <div className="pointer-events-none absolute bottom-[-220px] right-[-260px] w-[560px] h-[560px] bg-fuchsia-600 blur-[230px] opacity-60" />
+      <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] bg-violet-500 blur-[200px] opacity-30" />
+
+      {/* Accent line (top) */}
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400 to-transparent pointer-events-none" />
 
       {/* Success Banner (green) */}
       <div className="relative z-10 w-full bg-green-600 text-white">

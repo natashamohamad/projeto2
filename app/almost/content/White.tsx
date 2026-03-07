@@ -71,7 +71,7 @@ export default function White() {
             className="flex flex-col items-center gap-3 text-center w-full"
           >
             <span className="text-xs sm:text-sm font-mono tracking-[0.18em] uppercase text-cyan-300/80">
-              // processing your access in the mainframe…
+              Processing your access in the mainframe…
             </span>
             <Progress progress={68} />
           </motion.div>

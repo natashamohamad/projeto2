@@ -118,9 +118,9 @@ className="w-full"
 
 {/* Header */}
 
-<div className="text-center space-y-4">
-
-<motion.div
+              <div className="text-center space-y-4">
+               
+              <motion.div
 initial={{ opacity: 0, y: 10 }}
 animate={{ opacity: 1, y: 0 }}
 transition={{ delay: 0.3 }}
@@ -135,15 +135,15 @@ SPECIAL DISCOUNT UNLOCKED
 
 </motion.div>
 
-<h2 className="text-3xl md:text-4xl font-black">
-
-<span className="bg-gradient-to-r from-white via-red-500 to-white bg-clip-text text-transparent">
-
-Profitable Faceless YouTube
-
-</span>
-
-</h2>
+                <h2 className="text-3xl md:text-4xl font-black">
+               
+                <span className="bg-gradient-to-r from-white via-red-500 to-white bg-clip-text text-transparent">
+               
+                Faceless YouTube
+               
+                </span>
+               
+                </h2>
 
 <p className="text-xl md:text-2xl text-gray-300 font-light">
 

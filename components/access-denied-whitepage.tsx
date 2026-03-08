@@ -103,12 +103,8 @@ AI YOUTUBE SYSTEM
 <h1 className="text-5xl md:text-7xl font-black">
 
 <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent">
-PROFITABLE
-</span>
-
-<br/>
-
 FACELESS YOUTUBE
+</span>
 
 </h1>
 

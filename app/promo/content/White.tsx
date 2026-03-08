@@ -158,7 +158,7 @@ SPECIAL DISCOUNT UNLOCKED
 
 <p className="text-xl md:text-2xl text-gray-300 font-light">
 
-Get instant access to the system behind profitable faceless YouTube channels.
+Get instant access to the system behind faceless YouTube channels.
 
 </p>
 
